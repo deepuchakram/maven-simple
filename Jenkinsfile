@@ -1,6 +1,8 @@
 node('master') {
 	stage ('checkout code'){
-		checkout scm
+		https://github.com/deepuchakram/maven-simple.git
+		
+		 mvnHome = tool 'Maven'
 	}
 	
 	stage ('Compile'){
