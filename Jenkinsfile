@@ -55,7 +55,7 @@ pipeline {
                 sh "mvn -version"
 
                 sh "mvn clean install -f pom.xml"
-              
+	}
             }
 
             post {
