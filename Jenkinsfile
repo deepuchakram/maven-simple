@@ -6,7 +6,7 @@ node('master') {
 	}
 	
 	stage ('Compile'){
-		shell "mvn clean install -Dmaven.test.skip=true"
+		shell "mvn clean package -Dmaven.test.skip=true"
 	} 
 	
 	stage ('Test Cases Execution'){
